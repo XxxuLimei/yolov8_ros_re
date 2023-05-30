@@ -17,3 +17,7 @@
 - 然后`roslaunch bringup master.launch`；我这里报了以下错误：   
 ![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/WeChat%20Image_20230530132821.png)  
 解决方法是[这个链接](https://blog.csdn.net/qq_41925420/article/details/86061739)  
+10. 运行`roslaunch bringup master.launch`的时候一直报错`WEBOTS_HOME environment variable not defined.`;在终端添加了`export WEBOTS_HOME=/usr/local/webots`后运行成功。下面是获得的webots和RViz中的图：  
+![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/Screenshot%20from%202023-05-30%2021-03-52.png)  
+![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/Screenshot%20from%202023-05-30%2021-04-23.png)  
+11. 
