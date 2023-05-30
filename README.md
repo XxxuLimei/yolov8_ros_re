@@ -11,4 +11,9 @@
 - [2.Unsupported gpu architecture 'compute_30'](https://github.com/leggedrobotics/darknet_ros/issues/363)  
 - 编译成功：  
 ![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/WeChat%20Image_20230530132821.png)  
-8. 编译成功`darknet_ros`后，再次编译`catkin_make`
+8. 编译成功`darknet_ros`后，再次编译`catkin_make`  
+9. 运行launch文件，获得地图：  
+- 首先`source devel/setup.bash`;  
+- 然后`roslaunch bringup master.launch`；我这里报了以下错误：   
+![]()  
+解决方法是[这个链接](https://blog.csdn.net/qq_41925420/article/details/86061739)  
