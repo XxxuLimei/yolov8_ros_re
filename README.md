@@ -57,3 +57,17 @@ File "4_wheels_robot_fully_loaded.wbt" depends on:
   [OFFICIAL] TexturedBackgroundLight.proto
   [OFFICIAL] TexturedBackground.proto
 ```  
+2. 按照上面修改完成后，Error少了很多，但是还有如下错误：  
+```
+ERROR: 'Window.proto': JavaScript error: 'windowHeight' and 'bottomWallHeight' are too big in comparison to 'size.z'.
+ERROR: 'Window.proto': JavaScript error: 'windowHeight' and 'bottomWallHeight' are too big in comparison to 'size.z'.
+ERROR: 'Window.proto': JavaScript error: 'windowHeight' and 'bottomWallHeight' are too big in comparison to 'size.z'.
+ERROR: 'Window.proto': JavaScript error: 'windowHeight' and 'bottomWallHeight' are too big in comparison to 'size.z'.
+WARNING: DEF GROUND Solid > Shape > PBRAppearance > ImageTexture: Unable to find resource at '/home/xilm/fuxian/webots_ws/src/Robotics_PicoDegree/bringup/worlds/textures/parquetry.jpg'.
+WARNING: DEF GROUND Solid > Transform > Shape > PBRAppearance > ImageTexture: Unable to find resource at '/home/xilm/fuxian/webots_ws/src/Robotics_PicoDegree/bringup/worlds/textures/interlaced_parquetry.jpg'.
+WARNING: DEF CEIL Solid > Shape > PBRAppearance > ImageTexture: Unable to find resource at '/home/xilm/fuxian/webots_ws/src/Robotics_PicoDegree/bringup/worlds/textures/roughcast.jpg'.
+INFO: ros: Starting controller: /usr/local/webots/projects/default/controllers/ros/ros
+[ INFO] [1685500309.652367154]: Robot's unique name is Cam_robot_93077_xilm_MS_7D17.
+[ INFO] [1685500309.652388999]: Robot does not have a namespace
+[ INFO] [1685500309.657037419]: The controller is now connected to the ROS master.
+```  
