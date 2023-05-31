@@ -20,4 +20,40 @@
 10. 运行`roslaunch bringup master.launch`的时候一直报错`WEBOTS_HOME environment variable not defined.`;在终端添加了`export WEBOTS_HOME=/usr/local/webots`后运行成功。下面是获得的webots和RViz中的图：  
 ![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/Screenshot%20from%202023-05-30%2021-03-52.png)  
 ![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/Screenshot%20from%202023-05-30%2021-04-23.png)  
-11. 
+## 0531：  
+1. 运行的时候发现webots提示了好多error,正在逐步修改：  
+- [How to adapt your world or PROTO to Webots R2022b](https://github.com/cyberbotics/webots/wiki/How-to-adapt-your-world-or-PROTO-to-Webots-R2022b)，这个在修改的时候，需要给`cam_robot.proto`第一行加上`#VRML_SIM R2021a utf8`才能成功运行`declare_externproto.py`。修正后终端打印如下：  
+```
+(base) xilm@xilm-MS-7D17:~/fuxian/webots_ws/src/Robotics_PicoDegree/bringup$ python3 declare_externproto.py /usr/local/webots
+File "Cam_robot.proto" does not reference any PROTO
+File "home.wbt" depends on:
+  [LOCAL] Cam_robot.proto
+  [OFFICIAL] PortraitPainting.proto
+  [OFFICIAL] LandscapePainting.proto
+  [OFFICIAL] Window.proto
+  [OFFICIAL] Door.proto
+  [OFFICIAL] Wall.proto
+  [OFFICIAL] Chair.proto
+  [OFFICIAL] Table.proto
+  [OFFICIAL] Bed.proto
+  [OFFICIAL] Oven.proto
+  [OFFICIAL] Worktop.proto
+  [OFFICIAL] HotPlate.proto
+  [OFFICIAL] Sink.proto
+  [OFFICIAL] Plate.proto
+  [OFFICIAL] Fridge.proto
+  [OFFICIAL] TexturedBackground.proto
+  [OFFICIAL] BunchOfSunFlowers.proto
+  [OFFICIAL] SolidBox.proto
+  [OFFICIAL] Cabinet.proto
+  [OFFICIAL] CabinetHandle.proto
+  [OFFICIAL] Sofa.proto
+  [OFFICIAL] Armchair.proto
+  [OFFICIAL] Pedestrian.proto
+File "4_wheels_robot_fully_loaded.wbt" depends on:
+  [LOCAL] Cam_robot.proto
+  [OFFICIAL] WoodenBox.proto
+  [OFFICIAL] RectangleArena.proto
+  [OFFICIAL] TexturedBackgroundLight.proto
+  [OFFICIAL] TexturedBackground.proto
+```  
