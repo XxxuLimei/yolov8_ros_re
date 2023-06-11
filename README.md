@@ -71,3 +71,8 @@ INFO: ros: Starting controller: /usr/local/webots/projects/default/controllers/r
 [ INFO] [1685500309.652388999]: Robot does not have a namespace
 [ INFO] [1685500309.657037419]: The controller is now connected to the ROS master.
 ```  
+## 0611:  
+1. 启动步骤如下：  
+- 打开一个终端，输入`roscore`;  
+- 打开另一个终端，来到`/home/xilm/fuxian/webots_ws`路径下，输入`source devel/setup.bash`,接着输入`export WEBOTS_HOME=/usr/local/webots`,然后可以启动仿真`roslaunch bringup master.launch`.  
+2. 
