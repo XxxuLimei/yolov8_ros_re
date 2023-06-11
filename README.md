@@ -75,4 +75,5 @@ INFO: ros: Starting controller: /usr/local/webots/projects/default/controllers/r
 1. 启动步骤如下：  
 - 打开一个终端，输入`roscore`;  
 - 打开另一个终端，来到`/home/xilm/fuxian/webots_ws`路径下，输入`source devel/setup.bash`,接着输入`export WEBOTS_HOME=/usr/local/webots`,然后可以启动仿真`roslaunch bringup master.launch`.  
-2. 
+2. 实在太难改bug了哭:<，准备复现[这篇博客](https://blog.csdn.net/WhiffeYF/article/details/109187804)了；  
+3. 
