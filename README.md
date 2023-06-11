@@ -87,4 +87,24 @@ INFO: ros: Starting controller: /usr/local/webots/projects/default/controllers/r
 [ WARN] [1686485077.978562206]: link 'camera_link' material 'black' undefined.
 [ERROR] [1686485077.978602051]: Failed to build tree: parent link [plate_1_link] of joint [camera_joint] not found.  This is not valid according to the URDF spec. Every link you refer to from a joint needs to be explicitly defined in the robot description. To fix this problem you can either remove this joint [camera_joint] from your urdf file, or add "<link name="plate_1_link" />" to your urdf file.
 ```  
-
+6. 解决了错误  
+```
+[ WARN] [1686485077.978217388]: link 'base_link' material 'yellow' undefined.
+[ WARN] [1686485077.978529635]: link 'base_link' material 'yellow' undefined.
+[ WARN] [1686485077.978556638]: link 'camera_link' material 'black' undefined.
+[ WARN] [1686485077.978562206]: link 'camera_link' material 'black' undefined.
+```  
+- 通过在`my_gazebo_robot_car.urdf.xacro`文件中添加  
+```
+    <material name="yellow">
+        <color rgba="1 1 0 1"/>
+    </material>
+```  
+以及在`camera.xacro`文件中添加  
+```
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+```  
+成功消去了warning!  
+7. 
