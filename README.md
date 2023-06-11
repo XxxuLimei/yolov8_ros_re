@@ -76,4 +76,15 @@ INFO: ros: Starting controller: /usr/local/webots/projects/default/controllers/r
 - 打开一个终端，输入`roscore`;  
 - 打开另一个终端，来到`/home/xilm/fuxian/webots_ws`路径下，输入`source devel/setup.bash`,接着输入`export WEBOTS_HOME=/usr/local/webots`,然后可以启动仿真`roslaunch bringup master.launch`.  
 2. 实在太难改bug了哭:<，准备复现[这篇博客](https://blog.csdn.net/WhiffeYF/article/details/109187804)了；  
-3. 
+3. 这个模型也用到了darknet_ros，编译的时候一定要按照递归的方式克隆，再编译。  
+4. 显示的Gazabo模型如下：  
+![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/Screenshot%20from%202023-06-11%2020-08-27.png)  
+5. 但是报了很多错：
+```
+[ WARN] [1686485077.978217388]: link 'base_link' material 'yellow' undefined.
+[ WARN] [1686485077.978529635]: link 'base_link' material 'yellow' undefined.
+[ WARN] [1686485077.978556638]: link 'camera_link' material 'black' undefined.
+[ WARN] [1686485077.978562206]: link 'camera_link' material 'black' undefined.
+[ERROR] [1686485077.978602051]: Failed to build tree: parent link [plate_1_link] of joint [camera_joint] not found.  This is not valid according to the URDF spec. Every link you refer to from a joint needs to be explicitly defined in the robot description. To fix this problem you can either remove this joint [camera_joint] from your urdf file, or add "<link name="plate_1_link" />" to your urdf file.
+```  
+
