@@ -109,3 +109,6 @@ INFO: ros: Starting controller: /usr/local/webots/projects/default/controllers/r
 成功消去了warning!  
 ## 0617:  
 1. 准备在学长搭建的gazabo平台下运行目标检测算法，具体流程是：给小车加上camera和Lidar->能够在RViz下可视化相机和激光雷达数据->使用算法进行目标检测
+2. 目前车上有单目相机和激光雷达，在RViz下可视化结果如图：
+![](https://github.com/XxxuLimei/yolov8_ros_re/blob/main/picture/Screenshot%20from%202023-06-17%2020-17-16.png)  
+3. 接下来准备将kinect的双目相机加上去，然后改一下环境里的物体，看看是否可以检测；
