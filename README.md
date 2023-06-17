@@ -107,4 +107,5 @@ INFO: ros: Starting controller: /usr/local/webots/projects/default/controllers/r
     </material>
 ```  
 成功消去了warning!  
-7. 
+## 0617:  
+1. 准备在学长搭建的gazabo平台下运行目标检测算法，具体流程是：给小车加上camera和Lidar->能够在RViz下可视化相机和激光雷达数据->使用算法进行目标检测
